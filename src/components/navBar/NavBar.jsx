@@ -1,4 +1,6 @@
 import './navBar.scss';
+import { DarkModeContext } from '../../context/darkModeContext';
+import { useContext } from 'react';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
@@ -11,6 +13,8 @@ import avatar from '../../assets/undraw_male_avatar_g98d.svg';
 import { Link } from 'react-router-dom';
 
 function NavBar() {
+  const { darkMode, toggle } = useContext(DarkModeContext);
+
   return (
     <div className='navbar'>
       <div className='left'>
@@ -18,7 +22,11 @@ function NavBar() {
           <span>Vivid</span>
         </Link>
         <HomeOutlinedIcon />
-        <DarkModeOutlinedIcon />
+        {darkMode ? (
+          <LightModeOutlinedIcon onClick={toggle} />
+        ) : (
+          <DarkModeOutlinedIcon onClick={toggle} />
+        )}
         <AppsOutlinedIcon />
         <div className='search'>
           <SearchOutlinedIcon />
