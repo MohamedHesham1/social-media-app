@@ -28,6 +28,97 @@ function RightBar() {
             </div>
           </div>
         </div>
+        <div className='item'>
+          <span>Latest Activities</span>
+          <div className='user'>
+            <div className='userInfo'>
+              <img src={avatar} alt='user avatar' />
+              <p>
+                <span>John Doe </span> changed their cover picture
+              </p>
+            </div>
+            <span>1 min ago </span>
+          </div>
+          <div className='user'>
+            <div className='userInfo'>
+              <img src={avatar} alt='user avatar' />
+              <p>
+                <span>John Doe </span> changed their cover picture
+              </p>
+            </div>
+            <span>1 min ago </span>
+          </div>
+          <div className='user'>
+            <div className='userInfo'>
+              <img src={avatar} alt='user avatar' />
+              <p>
+                <span>John Doe </span> changed their cover picture
+              </p>
+            </div>
+            <span>1 min ago </span>
+          </div>
+          <div className='user'>
+            <div className='userInfo'>
+              <img src={avatar} alt='user avatar' />
+              <p>
+                <span>John Doe </span> changed their cover picture
+              </p>
+            </div>
+            <span>1 min ago </span>
+          </div>
+        </div>
+        <div className='item'>
+          <span>Online Friends</span>
+          <div className='user'>
+            <div className='userInfo'>
+              <img src={avatar} alt='user avatar' />
+              <div className='online' />
+              <span>John Doe </span>
+            </div>
+          </div>
+          <div className='user'>
+            <div className='userInfo'>
+              <img src={avatar} alt='user avatar' />
+              <div className='online' />
+              <span>John Doe </span>
+            </div>
+          </div>
+          <div className='user'>
+            <div className='userInfo'>
+              <img src={avatar} alt='user avatar' />
+              <div className='online' />
+              <span>John Doe </span>
+            </div>
+          </div>
+          <div className='user'>
+            <div className='userInfo'>
+              <img src={avatar} alt='user avatar' />
+              <div className='online' />
+              <span>John Doe </span>
+            </div>
+          </div>
+          <div className='user'>
+            <div className='userInfo'>
+              <img src={avatar} alt='user avatar' />
+              <div className='online' />
+              <span>John Doe </span>
+            </div>
+          </div>
+          <div className='user'>
+            <div className='userInfo'>
+              <img src={avatar} alt='user avatar' />
+              <div className='online' />
+              <span>John Doe </span>
+            </div>
+          </div>
+          <div className='user'>
+            <div className='userInfo'>
+              <img src={avatar} alt='user avatar' />
+              <div className='online' />
+              <span>John Doe </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
