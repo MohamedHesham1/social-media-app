@@ -1,18 +1,19 @@
-import './navBar.scss';
-import { DarkModeContext } from '../../context/darkModeContext';
-import { useContext } from 'react';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
-import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import AppsOutlinedIcon from '@mui/icons-material/AppsOutlined';
-import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
+import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import avatar from '../../assets/undraw_male_avatar_g98d.svg';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../context/authContext';
+import { DarkModeContext } from '../../context/darkModeContext';
+import './navBar.scss';
 
 function NavBar() {
+  const { currentUser } = useContext(AuthContext);
   const { darkMode, toggle } = useContext(DarkModeContext);
 
   return (
@@ -38,8 +39,8 @@ function NavBar() {
         <MailOutlinedIcon />
         <NotificationsActiveOutlinedIcon />
         <div className='user'>
-          <img src={avatar} alt='user avatar' />
-          <span>John Doe</span>
+          <img src={currentUser.profilePic.avatar} alt='user avatar' />
+          <span> {currentUser.name} </span>
         </div>
       </div>
     </div>
