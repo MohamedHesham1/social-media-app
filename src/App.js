@@ -1,20 +1,20 @@
 import { useContext } from 'react';
-import { AuthContext } from './context/authContext';
-import { DarkModeContext } from './context/darkModeContext';
-import Login from './pages/login/Login';
-import Register from './pages/register/Register';
-import NavBar from './components/navBar/NavBar';
-import LeftBar from './components/leftBar/LeftBar';
-import RightBar from './components/rightBar/RightBar';
-import Profile from './pages/profile/Profile';
-import Home from './pages/home/Home';
-import './style.scss';
 import {
   createBrowserRouter,
   Navigate,
   Outlet,
   RouterProvider,
 } from 'react-router-dom';
+import LeftBar from './components/leftBar/LeftBar';
+import NavBar from './components/navBar/NavBar';
+import RightBar from './components/rightBar/RightBar';
+import { AuthContext } from './context/authContext';
+import { DarkModeContext } from './context/darkModeContext';
+import Home from './pages/home/Home';
+import Login from './pages/login/Login';
+import Profile from './pages/profile/Profile';
+import Register from './pages/register/Register';
+import './style.scss';
 
 function App() {
   const { currentUser } = useContext(AuthContext);
