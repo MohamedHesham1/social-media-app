@@ -1,5 +1,4 @@
 import { createContext, useState, useEffect } from 'react';
-import avatar from '../assets/undraw_male_avatar_g98d.svg';
 
 const AuthContext = createContext();
 
@@ -13,7 +12,8 @@ function AuthContextProvider({ children }) {
     setCurrentUser({
       id: 1,
       name: 'John Doe ',
-      profilePic: avatar,
+      profilePic:
+        'https://media.istockphoto.com/id/1226886130/photo/3d-illustration-of-smiling-happy-man-with-laptop-sitting-in-armchair-cartoon-businessman.jpg?b=1&s=612x612&w=0&k=20&c=3l2mvXVqrSiU3593B897Yk-WYtpZ3xJhnmqI22dVhYQ=',
     });
   };
 
