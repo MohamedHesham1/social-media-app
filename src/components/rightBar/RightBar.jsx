@@ -1,7 +1,10 @@
+import { useContext } from 'react';
+import { AuthContext } from '../../context/authContext';
 import './rightBar.scss';
-import avatar from '../../assets/undraw_male_avatar_g98d.svg';
 
 function RightBar() {
+  const { currentUser } = useContext(AuthContext);
+
   return (
     <div className='rightBar'>
       <div className='container'>
@@ -9,8 +12,11 @@ function RightBar() {
           <span>Suggestions For You</span>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
-              <span>John Doe </span>
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
+              <span>{currentUser.name} </span>
             </div>
             <div className='buttons'>
               <button>follow</button>
@@ -19,8 +25,11 @@ function RightBar() {
           </div>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
-              <span>John Doe </span>
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
+              <span>{currentUser.name} </span>
             </div>
             <div className='buttons'>
               <button>follow</button>
@@ -32,36 +41,48 @@ function RightBar() {
           <span>Latest Activities</span>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
               <p>
-                <span>John Doe </span> changed their cover picture
+                <span>{currentUser.name} </span> changed their cover picture
               </p>
             </div>
             <span>1 min ago </span>
           </div>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
               <p>
-                <span>John Doe </span> changed their cover picture
+                <span>{currentUser.name} </span> changed their cover picture
               </p>
             </div>
             <span>1 min ago </span>
           </div>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
               <p>
-                <span>John Doe </span> changed their cover picture
+                <span>{currentUser.name} </span> changed their cover picture
               </p>
             </div>
             <span>1 min ago </span>
           </div>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
               <p>
-                <span>John Doe </span> changed their cover picture
+                <span>{currentUser.name} </span> changed their cover picture
               </p>
             </div>
             <span>1 min ago </span>
@@ -71,51 +92,72 @@ function RightBar() {
           <span>Online Friends</span>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
               <div className='online' />
-              <span>John Doe </span>
+              <span>{currentUser.name} </span>
             </div>
           </div>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
               <div className='online' />
-              <span>John Doe </span>
+              <span>{currentUser.name} </span>
             </div>
           </div>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
               <div className='online' />
-              <span>John Doe </span>
+              <span>{currentUser.name} </span>
             </div>
           </div>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
               <div className='online' />
-              <span>John Doe </span>
+              <span>{currentUser.name} </span>
             </div>
           </div>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
               <div className='online' />
-              <span>John Doe </span>
+              <span>{currentUser.name} </span>
             </div>
           </div>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
               <div className='online' />
-              <span>John Doe </span>
+              <span>{currentUser.name} </span>
             </div>
           </div>
           <div className='user'>
             <div className='userInfo'>
-              <img src={avatar} alt='user avatar' />
+              <img
+                src={currentUser.profilePic}
+                alt='user currentUser.profilePic'
+              />
               <div className='online' />
-              <span>John Doe </span>
+              <span>{currentUser.name} </span>
             </div>
           </div>
         </div>
