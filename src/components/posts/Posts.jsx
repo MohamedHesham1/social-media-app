@@ -1,3 +1,4 @@
+import Post from '../post/Post';
 import './posts.scss';
 
 const Posts = () => {
