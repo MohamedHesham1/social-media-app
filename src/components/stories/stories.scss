@@ -5,16 +5,13 @@
   gap: 10px;
   height: 250px;
   margin-bottom: 30px;
-
-  @include mobile {
-    height: 50px;
-    margin-bottom: 0;
-    justify-content: space-between;
-  }
-
   @include tablet {
     height: 150px;
     gap: 20px;
+  }
+  @include mobile {
+    height: 50px;
+    justify-content: space-between;
   }
 
   .story {

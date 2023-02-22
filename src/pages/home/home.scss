@@ -5,6 +5,12 @@
     padding: 20px 70px;
     background-color: themed('bgSoft');
     color: themed('textColor');
-    min-height: 100vh;
+
+    @include tablet {
+      padding: 20px;
+    }
+    @include mobile {
+      padding: 10px;
+    }
   }
 }

@@ -21,7 +21,9 @@
       display: flex;
       align-items: center;
       gap: 30px;
-
+      @include mobile {
+        gap: 40px;
+      }
       span {
         font-weight: bold;
         font-size: 20px;

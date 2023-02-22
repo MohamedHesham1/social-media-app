@@ -29,12 +29,10 @@
     }
     .profileContainer {
       padding: 20px 70px;
-
-      @include mobile {
-        padding: 10px;
-      }
-
       @include tablet {
+        padding: 20px;
+      }
+      @include mobile {
         padding: 20px;
       }
 
@@ -63,14 +61,13 @@
           flex: 1;
           display: flex;
           gap: 10px;
-
-          @include tablet {
-            flex-wrap: wrap;
-          }
-
+          flex-wrap: wrap;
           a {
             color: themed('textColorSoft');
           }
+          // @include tablet {
+          //   flex-wrap: wrap;
+          // }
         }
 
         .center {
@@ -96,7 +93,7 @@
               align-items: center;
               gap: 5px;
               color: themed('textColorSoft');
-
+              padding-right: 10px;
               span {
                 font-size: 12px;
               }
