@@ -64,7 +64,14 @@ const Post = ({ post }) => {
       <div className="container">
         <div className="user">
           <div className="userInfo">
-            <img src={"/upload/" + post.profilePic} alt="" />
+            {post.profilePic ? (
+              <img src={"/upload/" + post.profilePic} alt="" />
+            ) : (
+              <img
+                src="https://media.istockphoto.com/id/476085198/photo/businessman-silhouette-as-avatar-or-default-profile-picture.jpg?s=612x612&w=0&k=20&c=GVYAgYvyLb082gop8rg0XC_wNsu0qupfSLtO7q9wu38="
+                alt=""
+              />
+            )}
             <div className="details">
               <Link
                 to={`/profile/${post.userId}`}
