@@ -1,4 +1,4 @@
-@import '../../style.scss';
+@import "../../style.scss";
 
 .post {
   @include themify($themes) {
@@ -6,8 +6,8 @@
     -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
     box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
     border-radius: 20px;
-    background-color: themed('bg');
-    color: themed('textColor');
+    background-color: themed("bg");
+    color: themed("textColor");
     list-style: none;
 
     .container {
@@ -17,6 +17,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
 
         .userInfo {
           display: flex;
@@ -41,6 +42,16 @@
               font-size: 12px;
             }
           }
+        }
+        button {
+          position: absolute;
+          top: 30px;
+          right: 0;
+          border: none;
+          background-color: #f0544f;
+          padding: 5px;
+          cursor: pointer;
+          color: white;
         }
       }
 
