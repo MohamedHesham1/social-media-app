@@ -1,4 +1,4 @@
-import "./share.scss";
+import "./sharePost.scss";
 import Image from "../../assets/img.png";
 import Map from "../../assets/map.png";
 import Friend from "../../assets/friend.png";
@@ -7,7 +7,7 @@ import { AuthContext } from "../../context/authContext";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { makeRequest } from "../../axios";
 
-const Share = () => {
+const SharePost = () => {
   const [file, setFile] = useState(null);
   const [desc, setDesc] = useState("");
 
@@ -99,4 +99,4 @@ const Share = () => {
   );
 };
 
-export default Share;
+export default SharePost;
