@@ -24,7 +24,7 @@ function Register() {
     e.preventDefault();
     try {
       await axios.post(
-        "https://social-media-backend-z94r.onrender.com/register",
+        "https://social-media-backend-z94r.onrender.com/api/auth/register",
         inputs
       );
     } catch (err) {

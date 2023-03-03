@@ -10,7 +10,7 @@ function AuthContextProvider({ children }) {
 
   const login = async (inputs) => {
     const res = await axios.post(
-      "https://social-media-backend-z94r.onrender.com/login",
+      "https://social-media-backend-z94r.onrender.com/api/auth/login",
       inputs,
       {
         withCredentials: true,
