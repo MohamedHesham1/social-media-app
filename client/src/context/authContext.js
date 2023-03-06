@@ -14,6 +14,7 @@ function AuthContextProvider({ children }) {
       inputs,
       {
         withCredentials: true,
+        credentials: "include",
       }
     );
 

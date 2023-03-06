@@ -54,6 +54,9 @@ export const login = (req, res) => {
     res
       .cookie("accessToken", token, {
         httpOnly: true,
+        domain: ".onrender.com",
+        path: "/",
+        secure: true,
       })
       .status(200)
       .json(others);
