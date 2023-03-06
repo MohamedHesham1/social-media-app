@@ -56,6 +56,7 @@ export const login = (req, res) => {
         httpOnly: true,
         domain: ".onrender.com",
         path: "/",
+        sameSite: "none",
         secure: true,
       })
       .status(200)

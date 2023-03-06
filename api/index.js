@@ -19,6 +19,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: "https://social-media-frontend-dbtc.onrender.com",
+    credentials: true,
   })
 );
 app.use(cookieParser());
